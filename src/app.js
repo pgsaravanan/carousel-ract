@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Nav from '@components/Navigation/Nav';
 import { ThemeContext } from './store/context/themeContext';
-import CarouselContainer from './containers/carouselContainer';
+import CarouselContainer from './containers/ui/carousel/carouselContainer';
 
 const App = () => {
   const [theme, setTheme] = useState('light');

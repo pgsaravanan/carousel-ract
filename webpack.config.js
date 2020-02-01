@@ -13,6 +13,7 @@ const PATHS = {
   public: resolvePath('public'),
   dist: resolvePath('dist'),
   components: resolvePath('src/components'),
+  store: resolvePath('src/store')
 };
 
 module.exports = {
@@ -22,6 +23,7 @@ module.exports = {
     extensions: ['.js', '.jsx', '.json'],
     alias: {
       '@components': PATHS.components,
+      '@store': PATHS.store
     },
   },
   output: {
