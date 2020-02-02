@@ -45,5 +45,6 @@ Assume that below package is already available. Else, Please run below command.
 3. As said in test , have fetched images from API by using React hooks. Web pack proxy has been used to proxy the request to `https://pixabay.com/`
 4. Different Carousel styles has been set for Mobile and desktop. 
 5. Containers and Components structure has been used to build Carousel. 
-6. ContextAPI has been used to demonstrate ContextAPI. Top header has `Change theme` button to update the style with respect to theme.
+6. Top header has been introdced to just show the navigation items. And, React ContextAPI has been used to update theme. Top header has `Change theme` button to update the style with respect to theme. Currently it supports dark and light theme.
 7. Variables.scss has been used to keep all constants related to styles.
+8. I suggest we could use Redux as a store management system to load the data. And, we could use saga as middleware. React hooks helps to write simple and descriptive code such as `useSelector, useReducer` etc.,
