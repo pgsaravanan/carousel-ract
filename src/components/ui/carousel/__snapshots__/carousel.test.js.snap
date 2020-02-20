@@ -65,17 +65,26 @@ exports[`Carousel should match snapshot 1`] = `
   }
 >
   <div>
-    <div
+    <section
+      aria-labelledby="carouselheading"
       className="carousel-container"
     >
+      <h3
+        id="carouselheading"
+      >
+        Carousel items
+      </h3>
       <styled.ul
         active={2}
+        id="carouseDisplay"
         index={0}
       >
         <ul
           className="c0"
+          id="carouseDisplay"
         >
           <li
+            aria-live="polite"
             key="1"
           >
             <img
@@ -84,6 +93,7 @@ exports[`Carousel should match snapshot 1`] = `
             />
           </li>
           <li
+            aria-live="polite"
             key="2"
           >
             <img
@@ -92,6 +102,7 @@ exports[`Carousel should match snapshot 1`] = `
             />
           </li>
           <li
+            aria-live="polite"
             key="3"
           >
             <img
@@ -102,6 +113,7 @@ exports[`Carousel should match snapshot 1`] = `
         </ul>
       </styled.ul>
       <div
+        aria-controls="carouseDisplay"
         className="carousel-button-wrapper"
       >
         <button
@@ -115,7 +127,7 @@ exports[`Carousel should match snapshot 1`] = `
           onClick={[Function]}
         />
       </div>
-    </div>
+    </section>
   </div>
 </Carousel>
 `;

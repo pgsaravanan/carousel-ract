@@ -1,6 +1,6 @@
 @import "../../../../styles/variables.scss";
 
-.carousel-container{
+.carousel-container {
     overflow: hidden;
     margin: 50px 0;
     width: 98%;
@@ -36,6 +36,7 @@
         top: 45%;
         @media (min-width: $breakpoint-tablet) {
             position: initial;
+            top: initial;
             &.prev:after{
                 content: 'Previous';
             }

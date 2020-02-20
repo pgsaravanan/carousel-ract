@@ -27,19 +27,20 @@ const Carousel = ({ data }) => {
   return (
     <div>
       { data && (
-      <div className="carousel-container">
-        <CarouselWrapStyled index={currentImageIdx} active={active}>
+      <section className="carousel-container" aria-labelledby="carouselheading">
+        <h3 id="carouselheading">Carousel items</h3>
+        <CarouselWrapStyled index={currentImageIdx} active={active} id="carouseDisplay">
           { carouselImages.map((image) => (
-            <li key={image.id}>
+            <li key={image.id} aria-live="polite">
               <img src={image.webformatURL} alt={image.webformatURL} />
             </li>
           ))}
         </CarouselWrapStyled>
-        <div className="carousel-button-wrapper">
+        <div className="carousel-button-wrapper" aria-controls="carouseDisplay">
           <button onClick={onPrevious} className="prev" aria-label="Previous" />
           <button onClick={onNext} className="next" aria-label="Next" />
         </div>
-      </div>
+      </section>
       )}
     </div>
   );

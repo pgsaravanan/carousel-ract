@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Loaders from '@components/Loaders/loaders';
 import Carousel from '@components/ui/carousel/carousel';
-import { dataFetchHooks } from '@store/customHooks/dataFetchHooks';
+import { useDataFetchHooks } from '@store/customHooks/useDataFetchHooks';
 
 const CarouselContainer = () => {
-  const { data, loading } = dataFetchHooks('&q=beautiful+landscape&image_type=photo');
+  const { data, loading } = useDataFetchHooks('&q=beautiful+landscape&image_type=photo');
 
   return (
     <div>
